@@ -45,7 +45,7 @@ const masks = (selector) => {
 		}
 	}
 
-	let inputs = document.querySelectorAll("[name='phone']");
+	let inputs = document.querySelectorAll(selector);
 
 	inputs.forEach(item => {
 		item.addEventListener("input", createMask);
